@@ -33,6 +33,9 @@ RUN apt -y install mono-runtime
     # Lua 5.3
 RUN apt -y install lua5.3
 
+    # pm2
+RUN npm install pm2 -g
+
 USER container
 ENV  USER container
 ENV  HOME /home/container
